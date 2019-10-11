@@ -1,0 +1,560 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D9431092350A16D004D0B03 /* CardTransitionWithViewControllers_ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9431082350A16D004D0B03 /* CardTransitionWithViewControllers_ExampleTests.swift */; };
+		C25F3B58234F31BB00CDF691 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C25F3B4A234F31BB00CDF691 /* LaunchScreen.storyboard */; };
+		C25F3B59234F31BB00CDF691 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C25F3B4C234F31BB00CDF691 /* Main.storyboard */; };
+		C25F3B5A234F31BB00CDF691 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25F3B4F234F31BB00CDF691 /* AppDelegate.swift */; };
+		C25F3B5C234F31BB00CDF691 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C25F3B52234F31BB00CDF691 /* Assets.xcassets */; };
+		C25F3B5D234F31BB00CDF691 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25F3B55234F31BB00CDF691 /* CardViewController.swift */; };
+		C25F3B5E234F31BB00CDF691 /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25F3B57234F31BB00CDF691 /* CardsViewController.swift */; };
+		C25F3B62234F41D900CDF691 /* UIColor+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25F3B61234F41D900CDF691 /* UIColor+Random.swift */; };
+		C25F3B65234F421A00CDF691 /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25F3B64234F421A00CDF691 /* CardCollectionViewCell.swift */; };
+		C25F3B67234F437600CDF691 /* CardSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25F3B66234F437600CDF691 /* CardSegue.swift */; };
+		C25F3B69234F43B800CDF691 /* CardPresentAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25F3B68234F43B800CDF691 /* CardPresentAnimationController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3D94310B2350A16D004D0B03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C25F3B2A234F308500CDF691 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C25F3B31234F308600CDF691;
+			remoteInfo = "CardTransitionWithViewControllers-Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3D9431062350A16D004D0B03 /* CardTransitionWithViewControllers-ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CardTransitionWithViewControllers-ExampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D9431082350A16D004D0B03 /* CardTransitionWithViewControllers_ExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTransitionWithViewControllers_ExampleTests.swift; sourceTree = "<group>"; };
+		3D94310A2350A16D004D0B03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C25F3B32234F308600CDF691 /* CardTransitionWithViewControllers-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CardTransitionWithViewControllers-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C25F3B4B234F31BB00CDF691 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C25F3B4D234F31BB00CDF691 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C25F3B4F234F31BB00CDF691 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C25F3B50234F31BB00CDF691 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C25F3B52234F31BB00CDF691 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C25F3B55234F31BB00CDF691 /* CardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+		C25F3B57234F31BB00CDF691 /* CardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
+		C25F3B61234F41D900CDF691 /* UIColor+Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Random.swift"; sourceTree = "<group>"; };
+		C25F3B64234F421A00CDF691 /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
+		C25F3B66234F437600CDF691 /* CardSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSegue.swift; sourceTree = "<group>"; };
+		C25F3B68234F43B800CDF691 /* CardPresentAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPresentAnimationController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D9431032350A16D004D0B03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C25F3B2F234F308600CDF691 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D9431072350A16D004D0B03 /* CardTransitionWithViewControllers-ExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				3D9431082350A16D004D0B03 /* CardTransitionWithViewControllers_ExampleTests.swift */,
+				3D94310A2350A16D004D0B03 /* Info.plist */,
+			);
+			path = "CardTransitionWithViewControllers-ExampleTests";
+			sourceTree = "<group>";
+		};
+		C25F3B29234F308500CDF691 = {
+			isa = PBXGroup;
+			children = (
+				C25F3B34234F308600CDF691 /* CardTransitionWithViewControllers-Example */,
+				3D9431072350A16D004D0B03 /* CardTransitionWithViewControllers-ExampleTests */,
+				C25F3B33234F308600CDF691 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C25F3B33234F308600CDF691 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C25F3B32234F308600CDF691 /* CardTransitionWithViewControllers-Example.app */,
+				3D9431062350A16D004D0B03 /* CardTransitionWithViewControllers-ExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C25F3B34234F308600CDF691 /* CardTransitionWithViewControllers-Example */ = {
+			isa = PBXGroup;
+			children = (
+				C25F3B5F234F41BC00CDF691 /* Extensions */,
+				C25F3B4E234F31BB00CDF691 /* Application */,
+				C25F3B51234F31BB00CDF691 /* Resources */,
+				C25F3B49234F31BB00CDF691 /* Storyboards */,
+				C25F3B53234F31BB00CDF691 /* ViewControllers */,
+			);
+			path = "CardTransitionWithViewControllers-Example";
+			sourceTree = "<group>";
+		};
+		C25F3B49234F31BB00CDF691 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C25F3B4A234F31BB00CDF691 /* LaunchScreen.storyboard */,
+				C25F3B4C234F31BB00CDF691 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		C25F3B4E234F31BB00CDF691 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				C25F3B4F234F31BB00CDF691 /* AppDelegate.swift */,
+				C25F3B50234F31BB00CDF691 /* Info.plist */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		C25F3B51234F31BB00CDF691 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C25F3B52234F31BB00CDF691 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C25F3B53234F31BB00CDF691 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C25F3B54234F31BB00CDF691 /* Card */,
+				C25F3B56234F31BB00CDF691 /* Cards */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C25F3B54234F31BB00CDF691 /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				C25F3B55234F31BB00CDF691 /* CardViewController.swift */,
+				C25F3B66234F437600CDF691 /* CardSegue.swift */,
+				C25F3B68234F43B800CDF691 /* CardPresentAnimationController.swift */,
+			);
+			path = Card;
+			sourceTree = "<group>";
+		};
+		C25F3B56234F31BB00CDF691 /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				C25F3B63234F420B00CDF691 /* Cells */,
+				C25F3B57234F31BB00CDF691 /* CardsViewController.swift */,
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
+		C25F3B5F234F41BC00CDF691 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C25F3B60234F41BC00CDF691 /* UIColor */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C25F3B60234F41BC00CDF691 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				C25F3B61234F41D900CDF691 /* UIColor+Random.swift */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
+		C25F3B63234F420B00CDF691 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C25F3B64234F421A00CDF691 /* CardCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D9431052350A16D004D0B03 /* CardTransitionWithViewControllers-ExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D94310F2350A16D004D0B03 /* Build configuration list for PBXNativeTarget "CardTransitionWithViewControllers-ExampleTests" */;
+			buildPhases = (
+				3D9431022350A16D004D0B03 /* Sources */,
+				3D9431032350A16D004D0B03 /* Frameworks */,
+				3D9431042350A16D004D0B03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D94310C2350A16D004D0B03 /* PBXTargetDependency */,
+			);
+			name = "CardTransitionWithViewControllers-ExampleTests";
+			productName = "CardTransitionWithViewControllers-ExampleTests";
+			productReference = 3D9431062350A16D004D0B03 /* CardTransitionWithViewControllers-ExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C25F3B31234F308600CDF691 /* CardTransitionWithViewControllers-Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C25F3B46234F308800CDF691 /* Build configuration list for PBXNativeTarget "CardTransitionWithViewControllers-Example" */;
+			buildPhases = (
+				C25F3B2E234F308600CDF691 /* Sources */,
+				C25F3B2F234F308600CDF691 /* Frameworks */,
+				C25F3B30234F308600CDF691 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CardTransitionWithViewControllers-Example";
+			productName = "CardTransitionWithViewControllers-Example";
+			productReference = C25F3B32234F308600CDF691 /* CardTransitionWithViewControllers-Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C25F3B2A234F308500CDF691 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "William Boles";
+				TargetAttributes = {
+					3D9431052350A16D004D0B03 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = C25F3B31234F308600CDF691;
+					};
+					C25F3B31234F308600CDF691 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = C25F3B2D234F308500CDF691 /* Build configuration list for PBXProject "CardTransitionWithViewControllers-Example" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C25F3B29234F308500CDF691;
+			productRefGroup = C25F3B33234F308600CDF691 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C25F3B31234F308600CDF691 /* CardTransitionWithViewControllers-Example */,
+				3D9431052350A16D004D0B03 /* CardTransitionWithViewControllers-ExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D9431042350A16D004D0B03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C25F3B30234F308600CDF691 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C25F3B58234F31BB00CDF691 /* LaunchScreen.storyboard in Resources */,
+				C25F3B59234F31BB00CDF691 /* Main.storyboard in Resources */,
+				C25F3B5C234F31BB00CDF691 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D9431022350A16D004D0B03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D9431092350A16D004D0B03 /* CardTransitionWithViewControllers_ExampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C25F3B2E234F308600CDF691 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C25F3B62234F41D900CDF691 /* UIColor+Random.swift in Sources */,
+				C25F3B5A234F31BB00CDF691 /* AppDelegate.swift in Sources */,
+				C25F3B5D234F31BB00CDF691 /* CardViewController.swift in Sources */,
+				C25F3B65234F421A00CDF691 /* CardCollectionViewCell.swift in Sources */,
+				C25F3B5E234F31BB00CDF691 /* CardsViewController.swift in Sources */,
+				C25F3B69234F43B800CDF691 /* CardPresentAnimationController.swift in Sources */,
+				C25F3B67234F437600CDF691 /* CardSegue.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3D94310C2350A16D004D0B03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C25F3B31234F308600CDF691 /* CardTransitionWithViewControllers-Example */;
+			targetProxy = 3D94310B2350A16D004D0B03 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C25F3B4A234F31BB00CDF691 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C25F3B4B234F31BB00CDF691 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C25F3B4C234F31BB00CDF691 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C25F3B4D234F31BB00CDF691 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3D94310D2350A16D004D0B03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "CardTransitionWithViewControllers-ExampleTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.williamboles.CardTransitionWithViewControllers-ExampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CardTransitionWithViewControllers-Example.app/CardTransitionWithViewControllers-Example";
+			};
+			name = Debug;
+		};
+		3D94310E2350A16D004D0B03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "CardTransitionWithViewControllers-ExampleTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.williamboles.CardTransitionWithViewControllers-ExampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CardTransitionWithViewControllers-Example.app/CardTransitionWithViewControllers-Example";
+			};
+			name = Release;
+		};
+		C25F3B44234F308800CDF691 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C25F3B45234F308800CDF691 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C25F3B47234F308800CDF691 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "CardTransitionWithViewControllers-Example/Application/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.williamboles.CardTransitionWithViewControllers-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C25F3B48234F308800CDF691 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "CardTransitionWithViewControllers-Example/Application/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.williamboles.CardTransitionWithViewControllers-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D94310F2350A16D004D0B03 /* Build configuration list for PBXNativeTarget "CardTransitionWithViewControllers-ExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D94310D2350A16D004D0B03 /* Debug */,
+				3D94310E2350A16D004D0B03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C25F3B2D234F308500CDF691 /* Build configuration list for PBXProject "CardTransitionWithViewControllers-Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C25F3B44234F308800CDF691 /* Debug */,
+				C25F3B45234F308800CDF691 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C25F3B46234F308800CDF691 /* Build configuration list for PBXNativeTarget "CardTransitionWithViewControllers-Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C25F3B47234F308800CDF691 /* Debug */,
+				C25F3B48234F308800CDF691 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C25F3B2A234F308500CDF691 /* Project object */;
+}
