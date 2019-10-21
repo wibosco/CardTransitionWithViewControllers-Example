@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CardsViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+class CardsViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UIViewControllerTransitioningDelegate {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -18,6 +18,10 @@ class CardsViewController: UIViewController, UICollectionViewDataSource, UIColle
         for index in 0..<10 {
             let cardViewController = CardViewController.createFromStoryboard()
             let _ = cardViewController.view
+            cardViewController.transitioningDelegate = self
+            cardViewController.modalPresentationStyle = .custom
+            
+            
             let viewModel = CardViewModel(title: "title: \(index)", subtitle: "subtitle: \(index)", color: UIColor.randomPastelColor)
             
             cardViewController.configure(withViewModel: viewModel)
@@ -60,25 +64,64 @@ class CardsViewController: UIViewController, UICollectionViewDataSource, UIColle
         let viewController = cardViewControllers[indexPath.item]
         
         cell.hostedView = viewController.view
+        viewController.animate()
         
         return cell
     }
     
-    // MARK: - Segue
+    // MARK: - UICollectionViewDelegate
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let cardViewController = segue.destination as? CardViewController,
-            let cell = sender as? CardCollectionViewCell,
-            let indexPath = collectionView.indexPath(for: cell),
-            let cardSegue = segue as? CardSegue,
-            let hostedView = cell.hostedView {
-                let cellCardViewController = cardViewControllers[indexPath.item]
-                let startingPoint = cell.superview!.convert(cell.frame.origin, to: nil)
-                let startingFrame = CGRect(x: startingPoint.x + hostedView.frame.origin.x, y: startingPoint.y + hostedView.frame.origin.y, width: hostedView.frame.size.width, height: hostedView.frame.size.height)
-                cardSegue.startingFrame = startingFrame
-                let _ = cardViewController.view
-                cardViewController.configure(withViewModel: cellCardViewController.cardViewModel)
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let viewController = cardViewControllers[indexPath.item]
+        let hostedViewFrame = calculateHostedViewFrame(atIndexPath: indexPath)
+        viewController.startingFrame = hostedViewFrame
+        
+        removeChildContentViewController(viewController)
+        
+        present(viewController, animated: true, completion: nil)
+    }
+    
+    // MARK: - Positioning
+    
+    private func calculateHostedViewFrame(atIndexPath indexPath: IndexPath) -> CGRect {
+        guard let cell = collectionView.cellForItem(at: indexPath) as? CardCollectionViewCell,
+                let hostedView = cell.hostedView else {
+                    fatalError("Dependencies not set up correctly")
         }
+
+        let hostedViewPoint = cell.superview?.convert(cell.frame.origin, to: nil) ?? CGPoint.zero
+        let hostedViewFrame = CGRect(x: hostedViewPoint.x + hostedView.frame.origin.x, y: hostedViewPoint.y + hostedView.frame.origin.y, width: hostedView.frame.size.width, height: hostedView.frame.size.height)
+        
+        return hostedViewFrame
+    }
+    
+    // MARK: - UIViewControllerTransitioningDelegate
+    
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        guard let cardViewController = presented as? CardViewController,
+            let startingFrame = cardViewController.startingFrame else {
+            fatalError("Dependencies not set up correctly")
+        }
+        return CardPresentAnimationController(withStartingFrame: startingFrame)
+    }
+    
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        guard let cardViewController = dismissed as? CardViewController,
+            let destinationFrame = cardViewController.startingFrame else {
+                fatalError("Dependencies not set up correctly")
+        }
+        
+        let dismissAnimationController = CardDismissAnimationController(withStartingFrame: destinationFrame) { cardViewController in
+            guard let index = self.cardViewControllers.firstIndex(of: cardViewController) else {
+                fatalError("Unknown card view controller")
+            }
+            
+            self.addChild(cardViewController)
+            let indexPath = IndexPath(item: index, section: 0)
+            self.collectionView.reloadItems(at: [indexPath])
+        }
+        
+        return dismissAnimationController
     }
     
     // MARK: - ChildViewControllers
@@ -86,5 +129,14 @@ class CardsViewController: UIViewController, UICollectionViewDataSource, UIColle
     private func addChildContentViewController(_ childViewController: UIViewController) {
         addChild(childViewController)
         childViewController.didMove(toParent: self)
+    }
+    
+    private func removeChildContentViewController(_ childViewController: UIViewController) {
+        guard childViewController.parent != nil else {
+            return
+        }
+        
+        childViewController.willMove(toParent: nil)
+        childViewController.removeFromParent()
     }
 }

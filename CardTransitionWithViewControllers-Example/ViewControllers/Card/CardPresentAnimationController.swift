@@ -37,9 +37,6 @@ class CardPresentAnimationController: NSObject, UIViewControllerAnimatedTransiti
         
         containerView.addSubview(toViewController.view)
         
-        toViewController.view.setNeedsLayout()
-        toViewController.view.layoutIfNeeded()
-        
         let duration = transitionDuration(using: transitionContext)
         let finalFrame = transitionContext.finalFrame(for: toViewController)
         
@@ -49,6 +46,8 @@ class CardPresentAnimationController: NSObject, UIViewControllerAnimatedTransiti
             toViewController.view.frame = finalFrame
             toViewController.closeButton.alpha = 1.0
             toViewController.view.layer.cornerRadius = 0
+
+            toViewController.view.setNeedsLayout()
             toViewController.view.layoutIfNeeded()
         }) { (_) in
             transitionContext.completeTransition(true)

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3D9431092350A16D004D0B03 /* CardTransitionWithViewControllers_ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9431082350A16D004D0B03 /* CardTransitionWithViewControllers_ExampleTests.swift */; };
+		C23DF5FF23587DCA003632D0 /* CardDismissAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23DF5FE23587DCA003632D0 /* CardDismissAnimationController.swift */; };
+		C23DF6022359C055003632D0 /* TileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23DF6012359C055003632D0 /* TileCollectionViewCell.swift */; };
 		C25F3B58234F31BB00CDF691 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C25F3B4A234F31BB00CDF691 /* LaunchScreen.storyboard */; };
 		C25F3B59234F31BB00CDF691 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C25F3B4C234F31BB00CDF691 /* Main.storyboard */; };
 		C25F3B5A234F31BB00CDF691 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25F3B4F234F31BB00CDF691 /* AppDelegate.swift */; };
@@ -16,7 +18,6 @@
 		C25F3B5E234F31BB00CDF691 /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25F3B57234F31BB00CDF691 /* CardsViewController.swift */; };
 		C25F3B62234F41D900CDF691 /* UIColor+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25F3B61234F41D900CDF691 /* UIColor+Random.swift */; };
 		C25F3B65234F421A00CDF691 /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25F3B64234F421A00CDF691 /* CardCollectionViewCell.swift */; };
-		C25F3B67234F437600CDF691 /* CardSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25F3B66234F437600CDF691 /* CardSegue.swift */; };
 		C25F3B69234F43B800CDF691 /* CardPresentAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25F3B68234F43B800CDF691 /* CardPresentAnimationController.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +35,8 @@
 		3D9431062350A16D004D0B03 /* CardTransitionWithViewControllers-ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CardTransitionWithViewControllers-ExampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D9431082350A16D004D0B03 /* CardTransitionWithViewControllers_ExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTransitionWithViewControllers_ExampleTests.swift; sourceTree = "<group>"; };
 		3D94310A2350A16D004D0B03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C23DF5FE23587DCA003632D0 /* CardDismissAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDismissAnimationController.swift; sourceTree = "<group>"; };
+		C23DF6012359C055003632D0 /* TileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileCollectionViewCell.swift; sourceTree = "<group>"; };
 		C25F3B32234F308600CDF691 /* CardTransitionWithViewControllers-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CardTransitionWithViewControllers-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C25F3B4B234F31BB00CDF691 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C25F3B4D234F31BB00CDF691 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -44,7 +47,6 @@
 		C25F3B57234F31BB00CDF691 /* CardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
 		C25F3B61234F41D900CDF691 /* UIColor+Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Random.swift"; sourceTree = "<group>"; };
 		C25F3B64234F421A00CDF691 /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
-		C25F3B66234F437600CDF691 /* CardSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSegue.swift; sourceTree = "<group>"; };
 		C25F3B68234F43B800CDF691 /* CardPresentAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPresentAnimationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,6 +75,14 @@
 				3D94310A2350A16D004D0B03 /* Info.plist */,
 			);
 			path = "CardTransitionWithViewControllers-ExampleTests";
+			sourceTree = "<group>";
+		};
+		C23DF6002359C037003632D0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C23DF6012359C055003632D0 /* TileCollectionViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		C25F3B29234F308500CDF691 = {
@@ -143,9 +153,10 @@
 		C25F3B54234F31BB00CDF691 /* Card */ = {
 			isa = PBXGroup;
 			children = (
+				C23DF6002359C037003632D0 /* Cells */,
 				C25F3B55234F31BB00CDF691 /* CardViewController.swift */,
-				C25F3B66234F437600CDF691 /* CardSegue.swift */,
 				C25F3B68234F43B800CDF691 /* CardPresentAnimationController.swift */,
+				C23DF5FE23587DCA003632D0 /* CardDismissAnimationController.swift */,
 			);
 			path = Card;
 			sourceTree = "<group>";
@@ -293,12 +304,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C25F3B62234F41D900CDF691 /* UIColor+Random.swift in Sources */,
+				C23DF5FF23587DCA003632D0 /* CardDismissAnimationController.swift in Sources */,
 				C25F3B5A234F31BB00CDF691 /* AppDelegate.swift in Sources */,
 				C25F3B5D234F31BB00CDF691 /* CardViewController.swift in Sources */,
+				C23DF6022359C055003632D0 /* TileCollectionViewCell.swift in Sources */,
 				C25F3B65234F421A00CDF691 /* CardCollectionViewCell.swift in Sources */,
 				C25F3B5E234F31BB00CDF691 /* CardsViewController.swift in Sources */,
 				C25F3B69234F43B800CDF691 /* CardPresentAnimationController.swift in Sources */,
-				C25F3B67234F437600CDF691 /* CardSegue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

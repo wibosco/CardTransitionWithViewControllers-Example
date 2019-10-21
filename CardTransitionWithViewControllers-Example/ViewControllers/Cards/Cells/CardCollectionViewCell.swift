@@ -16,11 +16,15 @@ class CardCollectionViewCell: UICollectionViewCell {
         didSet {
             guard let hostedView = hostedView else {
                 return
+                
             }
             let padding: CGFloat = 30
             hostedView.frame = CGRect(x: padding, y: padding, width: contentView.bounds.size.width - (padding*2), height: contentView.bounds.size.height - padding)
-            hostedView.layer.cornerRadius = 10
+            
+            hostedView.layer.cornerRadius = 20
             hostedView.layer.masksToBounds = true
+            
+            contentView.contentMode = .center
             contentView.addSubview(hostedView)
             
             setNeedsLayout()
